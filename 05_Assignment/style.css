@@ -1,0 +1,103 @@
+body{
+	background-color: #ebedf2;
+
+
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+	background-color:#323136;
+	color:white;
+}
+
+.navbar-links{
+	display:grid;
+	list-style-type:none;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+	padding:18px;
+	font-size:14px;
+}
+
+.navbar-signin-btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.navbar-login-btn {
+  background-color: #4f4e54;
+  border: none;
+  color: white;
+  border: 1px solid #e7e6ed; 
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+
+.plan-prices{
+	display:grid;
+	grid-template-columns: 1fr;
+}
+
+.plan-price-heading{
+	text-align:center;
+	color:#262626;
+}
+
+.plan-price-btn{
+	background-color: #cce0ff;
+	border: 1px solid #4d94ff; 
+	color: #0d0d0d;
+	padding: 15px 30px;
+	font-size: 14px;
+	border-radius: 6px;
+}
+
+.plan-price-btn1{
+	background-color: #ffffff;
+	border: 1px solid #8c8c8c; 
+	color: #0d0d0d;
+	padding: 15px 30px;
+	font-size: 14px;
+	border-radius: 6px;
+}
+
+.price-info{
+	background-color:#fafbfc;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin-left:35px;
+	margin-right:35px;
+	padding-left:15px;
+	border-top: 5px solid #993300;
+	border-left: 1px solid #adaba3;
+	border-right: 1px solid #adaba3;
+	border-bottom: 1px solid #adaba3;
+	
+}
+
+.price-info p,.price-info li{
+	font-size:13px;
+	color:#2f2f30;
+}
+
+.price-info-heading{
+	color:#993300
+}
+
+
+.price-info-btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 6px;
+}
