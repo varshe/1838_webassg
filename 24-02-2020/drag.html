@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML div</title>
+</head>
+<style>
+#div1, #div2 {
+	float: left;
+	width: 170px;
+	height: 170px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid black;
+	background:#20A7BC 
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+<div id ="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+</div>
+<div id ="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+</div>
+<div class="img">
+	<img src="twitty.png" width="150" height="150" draggable="true" ondragstart="drag(event)" id="drag1">
+</div>
+</body>
+</html>
